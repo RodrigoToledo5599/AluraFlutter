@@ -11,17 +11,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'SuperApp',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('SuperApp'),
-          backgroundColor: Colors.red,
-        ),
-        body: Center(
-          child: Text('Hello, SuperApp seu corno!'),
-        ),
-      ),
-    );
+    return (Stack(children: <Widget>[
+      Container(width: 100, color: Colors.blue),
+      Container(width: 90, color: Colors.white)
+    ]));
   }
 }
